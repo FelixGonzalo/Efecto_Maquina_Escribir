@@ -1,0 +1,74 @@
+.container {
+  display: block;
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Using only CSS*/
+
+.maquina-escribir {
+  background: #f7dd4a;
+  position: relative;
+}
+
+.maquina-escribir::after {
+  content: "";
+  border-left: 3px solid black;
+  background: white;
+  right: 0;
+  height: 100%;
+  position: absolute;
+  animation: maquinaescribir 2s infinite alternate steps(14);
+}
+
+@keyframes maquinaescribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+/* con JS */
+
+#maquina-escribir1 {
+  display: inline-block;
+  font-size: 30px;
+  border-right: 3px solid black;
+  margin: 0;
+}
+
+#maquina-escribir2 {
+  border-right: 3px solid black;
+  margin: 0;
+  background: #f7dd4a;
+}
+
+#maquina-escribir3 {
+  border-right: 3px solid black;
+  margin: 0;
+  background: #f7dd4a;
+}
+
+.caja {
+  border: 2px solid black;
+  max-width: 200px;
+  height: 100px;
+  padding: 10px;
+}
+
+#maquina-escribir4 {
+  display: inline;
+  border-right: 3px solid black;
+}
+
+.por {
+	text-align: center;
+}
